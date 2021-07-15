@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+body {
+  background-color: #e0e0e0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  max-width: 1160px;
+  width: 100%;
+}
+.header-section {
+  background-color: #2d25a0;
+  min-height: 600px;
+  height: auto;
+  color: white;
+}
+.header {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  padding-top: 60px;
+}
+.header-content h1 {
+  font-size: 48px;
+}
+.header-content button {
+  font-size: 16px;
+  padding: 10px 24px;
+  background-color: #e02c6d;
+  border: none;
+  color: white;
+}
+.player-section {
+  justify-content: center;
+  display: grid;
+  grid-gap: 15px;
+  margin-top: 50px;
+  grid-template-columns: repeat(3, 330px);
+}
+.player {
+  width: 330px;
+  padding: 15px;
+}
+.player img {
+  width: 100%;
+}
+.player h4 {
+  font-size: 24px;
+}
+.footer {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer > img {
+  margin: 40px 0;
+}
+.social-icons {
+  display: flex;
+}
+.social-icons i {
+  background-color: rgb(201, 201, 201);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.highlight {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  align-items: center;
+  margin-top: 50px;
+}
+.highlight-content {
+  width: 50%;
+}
+.highlight-img {
+  width: 50%;
+}
+.highlight-img img {
+  width: 100%;
+}
+.highlight-content button {
+  padding: 10px 24px;
+  background: #e02c6d;
+  color: white;
+  border: none;
+}
+@media (max-width: 600px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-top: 60px;
+  }
+
+  .header-content h1 {
+    font-size: 35px;
+    width: 90%;
+    margin: auto;
+  }
+  .header-content button {
+    margin: 30px;
+  }
+  .header-img img {
+    width: 80%;
+    margin-left: 20px;
+  }
+
+  .player-section {
+    justify-content: center;
+    display: grid;
+    grid-gap: 15px;
+    margin-top: 50px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .player {
+    padding: 15px;
+    margin: auto;
+  }
+  .player img {
+    width: 100%;
+  }
+  .footer > img {
+    width: 60%;
+  }
+  .highlight {
+    display: flex;
+    flex-direction: column;
+  }
+  .highlight-content {
+    width: 90%;
+  }
+  .highlight-img {
+    margin-top: 30px;
+    width: 90%;
+  }
+  .highlight-img img {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-top: 60px;
+  }
+
+  .header-content h1 {
+    font-size: 35px;
+    width: 90%;
+    margin: auto;
+  }
+  .header-content button {
+    margin: 30px;
+  }
+  .header-img img {
+    width: 80%;
+    margin-left: 20px;
+  }
+
+  .player-section {
+    justify-content: center;
+    display: grid;
+    grid-gap: 15px;
+    margin-top: 50px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .player {
+    padding: 15px;
+    margin: auto;
+  }
+  .player img {
+    width: 100%;
+  }
+  .footer > img {
+    width: 60%;
+  }
+  .highlight {
+    display: flex;
+    flex-direction: column;
+  }
+  .highlight-content {
+    width: 90%;
+  }
+  .highlight-img {
+    margin-top: 30px;
+    width: 90%;
+  }
+  .highlight-img img {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 90%;
+    padding-top: 60px;
+  }
+
+  .player-section {
+    grid-template-columns: repeat(2, 330px);
+  }
+    .highlight {
+    display: flex;
+    flex-direction: row;
+  }
+  .highlight-content {
+    width: 50%;
+  }
+  .highlight-img {
+    width: 50%;
+  }
+  .highlight-img img {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 90%;
+    padding-top: 60px;
+  }
+  .player-section {
+    grid-template-columns: repeat(3, 330px);
+  }
+  .footer > img {
+    width: 350px;
+  }
+}
